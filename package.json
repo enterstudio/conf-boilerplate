@@ -3,7 +3,9 @@
   "scripts": {
     "deploy": "docpad deploy-ghpages --env static",
     "generate": "docpad generate --env static",
-    "watch": "docpad run"
+    "watch": "docpad run",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "docpad": "^6.78.1",
@@ -11,6 +13,8 @@
     "docpad-plugin-ghpages": "^2.4.4",
     "docpad-plugin-less": "^2.4.1",
     "docpad-plugin-marked": "^2.3.0",
-    "docpad-plugin-partials": "^2.9.2"
-  }
+    "docpad-plugin-partials": "^2.9.2",
+    "snyk": "^1.83.0"
+  },
+  "snyk": true
 }
